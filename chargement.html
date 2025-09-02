@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+:root {
+
+--bg-color: #1f242d;
+--second-bg-color: #323946;
+--text-color: #fff;
+--main-color: #0ef;
+
+}
+
+body{
+
+background: var(--bg-color);
+}
+
+.loader{
+
+padding: 20rem 0 0 0;
+display: flex;
+justify-content: center;
+border-bottom: 5px solid var(--bg-color);
+
+}
+
+.loader__ball{
+
+display: inline-block;
+height: 25px;
+width: 25px;
+background-color: var(--main-color);
+margin-inline: 5px;
+border-radius: 50%;
+animation: bounce 450ms alternate infinite;
+}
+
+.loader__ball:nth-child(2){
+
+animation-delay: 150ms;
+}
+
+.loader__ball:nth-child(3){
+
+animation-delay: 300ms;
+}
+
+@keyframes bounce {
+form{
+
+    transform: scaleX(1.25);
+}
+
+to{
+
+    transform: translateY(-50px) scaleX(1);
+}
+}
+    </style>
+</head>
+<body>
+    
+    <span class="loader">
+        <center>
+        <span class="loader__ball"></span>
+        <span class="loader__ball"></span>
+        <span class="loader__ball"></span>
+    </center>
+</span>
+<script>
+    setTimeout(() => {
+            window.location.href = "./index_portfolio.html"; // ⬅️ mets ici le nom de ta page cible
+        }, 4000); // délai de 1 seconde (1000 ms)
+</script>
+</body>
+</html>

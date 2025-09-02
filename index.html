@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+
+--bg-color: #1f242d;
+--second-bg-color: #323946;
+--text-color: #fff;
+--main-color: #0ef;
+
+}
+
+html {
+
+overflow-x: hidden;
+scroll-behavior: smooth;
+scroll-padding-top: 7em;
+}
+
+.container {
+
+width: 100%;
+height: 100vh;
+background: var(--bg-color);
+justify-content: center;
+align-items: center;
+display: flex;
+}
+
+button {
+
+width: 270px;
+height: 80px;
+border: none;
+outline: none;
+background: var(--second-bg-color);
+color: #fff;
+font-size: 20px;
+font-weight: bold;
+border-radius: 40px;
+text-align: center;
+box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.4);
+position: relative;
+overflow: hidden;
+cursor: pointer;
+}
+
+.check-box {
+
+width: 80px;
+height: 80px;
+border-radius: 40px;
+box-shadow: 0 0 12px -2px rgba(0, 0, 0, 0.5);
+position: absolute;
+top: 0;
+right: -40px;
+opacity: 0;
+
+}
+
+.check-box svg {
+
+width: 40px;
+margin: 20px;
+
+}
+
+svg polyline {
+
+stroke-width: 3;
+stroke: #fff;
+stroke-dasharray: 43;
+stroke-dashoffset: 34;
+stroke-linecap: round;
+
+}
+
+.active {
+
+background: var(--main-color);
+transition: 1s;
+}
+
+
+.active .check-box {
+
+right: 0;
+opacity: 1;
+transition: 1s;
+
+}
+
+.active p {
+
+margin-right: 125px;
+transition: 1s;
+}
+
+.active svg polyline {
+
+stroke-dashoffset: 0;
+transition: 1s;
+transition-delay: 1s;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button id="btn">
+            <p id="btnText">VOIR LE PORTFOLIO ?</p>
+            <div class="check-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                </svg>
+            </div>
+        </button>
+    </div>
+    <script>
+        const btn = document.querySelector("#btn");
+            const btnText = document.querySelector("#btnText");
+
+            btn.onclick = () => {
+                btnText.innerHTML = "D'accord !";
+                btn.classList.add("active");
+
+                // Attendre un petit moment avant de rediriger (optionnel)
+                setTimeout(() => {
+                    window.location.href = "./chargement.html"; // ⬅️ mets ici le nom de ta page cible
+                }, 2000); // délai de 2 seconde (1000 ms)
+            };
+    </script>
+</body>
+
+</html>

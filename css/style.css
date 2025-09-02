@@ -1,0 +1,23 @@
+body{
+/*    background-color: #000;*/
+    background-color: #10135A;
+/*background-color: #fff;*/
+}
+@-webkit-keyframes logo {
+  from { -webkit-transform: rotateY(0); }
+  to   { -webkit-transform: rotateY(-360deg); }
+}
+.logo {
+    margin-top: 10px;
+    margin-left: 150px;
+}
+.alert-success{
+    background-color: #FFF;
+}
+.logo img{
+    -webkit-animation: logo 8s infinite linear;
+}
+
+.contenu{
+    background-color: rgb(255,255,255);
+}
