@@ -3,9 +3,9 @@
 
   // 🔗 Chaque image a maintenant une URL associée
   const DEFAULT_IMAGES = [
-    { src: './image/Capture d’écran_22-7-2025_25524_.jpeg', href: './page/autres_pages/PROJET HTML_CSS/index.html' },
+    { src: '', href: '' },
+    { src: '', href: '' },
     { src: './image/MIEL.jpeg', href: './page/autres_pages/VENTE_MIEL/index.html' },
-    { src: './image/quiz.png', href: './page/autres_pages/quiz de damel/index.html' },
     { src: './image/montre.jpeg', href: './page/autres_pages/MONTRE/index.html' },
     { src: './image/maketing.jpeg', href: './page/autres_pages/site marketing digitale/index.html' },
     { src: './image/FASTFOOD.jpeg', href: './page/autres_pages/site_fast_food/index.html' }
