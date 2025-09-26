@@ -518,3 +518,166 @@ body{
     color: #fff;
 
 }
+
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 1024px) {
+    .header {
+        padding: 15px 5%;
+    }
+
+    .home-content h1 {
+        font-size: 60px;
+    }
+
+    .quiz-section .quiz-box,
+    .quiz-section .result-box,
+    .popup-info {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        background: var(--second-bg-color);
+        padding: 10px 20px;
+        border-radius: 8px;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .home-content h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .home-content p {
+        font-size: 14px;
+    }
+
+    .home-content .start-btn {
+        width: 160px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .popup-info {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .popup-info h2 {
+        font-size: 32px;
+    }
+
+    .quiz-section .quiz-box,
+    .quiz-section .result-box {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .quiz-box h1 {
+        font-size: 24px;
+    }
+
+    .quiz-box .question-text {
+        font-size: 18px;
+    }
+
+    .quiz-footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .quiz-footer .next-btn {
+        width: 100%;
+    }
+
+    .result-box h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .result-box .pourcentage-container {
+        width: 200px;
+    }
+
+    .pourcentage-container .circular-progress {
+        width: 180px;
+        height: 180px;
+    }
+
+    .pourcentage-container .circular-progress::before {
+        width: 150px;
+        height: 150px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .buttons button {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 24px;
+    }
+
+    .home-content h1 {
+        font-size: 32px;
+    }
+
+    .home-content p {
+        font-size: 13px;
+    }
+
+    .home-content .start-btn {
+        width: 140px;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .quiz-box h1 {
+        font-size: 20px;
+    }
+
+    .quiz-box .question-text {
+        font-size: 16px;
+    }
+
+    .quiz-box span {
+        font-size: 14px;
+    }
+
+    .popup-info h2 {
+        font-size: 24px;
+    }
+
+    .popup-info .info {
+        font-size: 14px;
+    }
+
+    .circular-progress .progress-value {
+        font-size: 28px;
+    }
+
+    .pourcentage-container .Score-text {
+        font-size: 18px;
+        text-align: center;
+    }
+}
